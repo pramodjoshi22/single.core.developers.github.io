@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Target for:   600 problems solved  LeeCode Kit  Offer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My LeetCode Journal">
+<meta property="og:url" content="http://yoursite.com/2022/03/17/My%20LeetCode%20Journal/index.html">
+<meta property="og:site_name" content="Lyrics">
+<meta property="og:description" content="Target for:   600 problems solved  LeeCode Kit  Offer">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-18T02:15:34.000Z">
+<meta property="article:modified_time" content="2022-05-15T03:33:08.093Z">
+<meta property="article:author" content="Lyrics">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Algorithms">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2022/03/17/My%20LeetCode%20Journal/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>My LeetCode Journal | Lyrics</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lyrics" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lyrics</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-books">
+
+    <a href="https://lyrics-reading.notion.site/Reading-List-de2b0fcb03f744fdb8d787334b7e14e8" rel="noopener" target="_blank"><i class="fa fa-book fa-fw"></i>Books</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/aden-q" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/03/17/My%20LeetCode%20Journal/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lyrics">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyrics">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          My LeetCode Journal
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-03-17 21:15:34" itemprop="dateCreated datePublished" datetime="2022-03-17T21:15:34-05:00">2022-03-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-14 22:33:08" itemprop="dateModified" datetime="2022-05-14T22:33:08-05:00">2022-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Random/" itemprop="url" rel="index"><span itemprop="name">Random</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Target for:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 600 problems solved</li>
+<li><input disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="https://leetcode.com/store/">LeeCode Kit</a></li>
+<li><input disabled="" type="checkbox"> Offer</li>
+</ul>
+<span id="more"></span>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/Aden-Q/LeetCode">Repo_Address</a></p>
+<p>Reference:</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://programmercarl.com/">https://programmercarl.com/</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://labuladong.github.io/algo/">https://labuladong.github.io/algo/</a></p>
+</li>
+</ul>
+<p>Topics:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Array</li>
+<li><input checked="" disabled="" type="checkbox"> Linked List</li>
+<li><input checked="" disabled="" type="checkbox"> Hash Table</li>
+<li><input checked="" disabled="" type="checkbox"> String</li>
+<li><input checked="" disabled="" type="checkbox"> Double Pointers</li>
+<li><input checked="" disabled="" type="checkbox"> Stack and Queue</li>
+<li><input checked="" disabled="" type="checkbox"> Binary Tree</li>
+<li><input checked="" disabled="" type="checkbox"> Backtracking</li>
+<li><input checked="" disabled="" type="checkbox"> Greedy Algorithm</li>
+<li><input checked="" disabled="" type="checkbox"> Dynamic Programming</li>
+</ul>
+<h2 id="Mar-17"><a href="#Mar-17" class="headerlink" title="Mar 17"></a>Mar 17</h2><ul>
+<li>15.3Sum</li>
+</ul>
+<h2 id="Mar-18"><a href="#Mar-18" class="headerlink" title="Mar 18"></a>Mar 18</h2><ul>
+<li>8.String to Integer (atoi)</li>
+<li>12.Integer to Roman</li>
+<li>17.Letter Combinations of a Phone Number</li>
+<li>18.4Sum</li>
+<li>19.Remove Nth Node From End of List</li>
+</ul>
+<h2 id="Mar-19"><a href="#Mar-19" class="headerlink" title="Mar 19"></a>Mar 19</h2><ul>
+<li><p>31.Next Permutation</p>
+</li>
+<li><p>33.Search in Rotated Sorted Array</p>
+</li>
+<li><p>34.Find First and Last Position of Element in Sorted Array</p>
+</li>
+<li><p>39.Combination Sum</p>
+</li>
+<li><p>77.Combinations</p>
+</li>
+<li><p>216.Combination Sum II</p>
+</li>
+<li><p>17.Letter Combination of Phone Number</p>
+</li>
+<li><p>39.Combination Sum</p>
+</li>
+<li><p>40.Combination Sum II</p>
+</li>
+<li><p>131.Palindrome Paritioning</p>
+</li>
+<li><p>93.Restore IP Addresses</p>
+</li>
+<li><p>78.Subsets</p>
+</li>
+<li><p>90.Subsets II</p>
+</li>
+</ul>
+<h2 id="Mar-20"><a href="#Mar-20" class="headerlink" title="Mar 20"></a>Mar 20</h2><ul>
+<li><p>491.Increasing Subsequences</p>
+</li>
+<li><ol start="46">
+<li></li>
+</ol>
+</li>
+<li><ol start="47">
+<li></li>
+</ol>
+</li>
+<li><ol start="332">
+<li></li>
+</ol>
+</li>
+<li><p>51.N-Queens</p>
+</li>
+<li><p>37.Sudoku Solver</p>
+</li>
+<li><p>704.Binary Search</p>
+</li>
+<li><p>283.Move Zeroes，简单题</p>
+</li>
+<li><ol start="844">
+<li></li>
+</ol>
+</li>
+<li><p>977.Squares of a Sorted Array。</p>
+</li>
+<li><p>209.Minimum Size Subarrary Sum</p>
+</li>
+<li><p>904.Fruit Into Baskets</p>
+</li>
+<li><p>76.Minimum Window Substring</p>
+</li>
+<li><p>59.Spiral Matrix II</p>
+</li>
+</ul>
+<h2 id="March-21"><a href="#March-21" class="headerlink" title="March 21"></a>March 21</h2><ul>
+<li>203.Remove Linked List Elements</li>
+<li>707.Design Linked List</li>
+</ul>
+<h2 id="March-22"><a href="#March-22" class="headerlink" title="March 22"></a>March 22</h2><ul>
+<li>142.Linked List Cycle II</li>
+<li>242.Valid Anagram</li>
+<li>383.Ransom Note</li>
+<li>49.Group Anagrams</li>
+<li>438.Find All Anagrams in a String</li>
+<li>454.4Sum II</li>
+</ul>
+<h2 id="March-23"><a href="#March-23" class="headerlink" title="March 23"></a>March 23</h2><ul>
+<li>541.Reverse String II</li>
+<li>151.Reverse Words in a String</li>
+<li>459.Repeated Substring Pattern</li>
+</ul>
+<h2 id="March-24"><a href="#March-24" class="headerlink" title="March 24"></a>March 24</h2><ul>
+<li>232.Implement Queue Using Stacks</li>
+<li>225.Implement Stack Using Queues</li>
+<li>1047.Remove All Adjacent Duplicates In String</li>
+<li>239.Sliding Window Maximum</li>
+<li>347.Top K Frequent Elements</li>
+</ul>
+<h2 id="March-25"><a href="#March-25" class="headerlink" title="March 25"></a>March 25</h2><ul>
+<li><p>102.Binary Tree Level Order Traversal</p>
+</li>
+<li><p>107.Binary Tree Level Order Traversal II</p>
+</li>
+<li><p>199.Binary Tree Right Side View</p>
+</li>
+<li><p>637.Average of Levels in Binary Tree</p>
+</li>
+<li><p>429.N-ary Level Order Traversal</p>
+</li>
+<li><p>515.Find Largest Value in Each Tree Row</p>
+</li>
+<li><p>116.Populating Next Right Pointers in Each Node</p>
+</li>
+<li><p>117.Populating Next Right Pointers in Each Node II</p>
+</li>
+<li><p>111.Minimum Depth of Binary Tree</p>
+</li>
+<li><p>226.Invert Binary Tree</p>
+</li>
+<li><p>100.Same Tree</p>
+</li>
+<li><p>572.Subtree of Another Tree</p>
+</li>
+<li><p>559.Maximum Depth of N-ary Tree</p>
+</li>
+<li><p>222.Count Complete Tree Nodes</p>
+</li>
+<li><p>110.Balanced Binary Tree</p>
+</li>
+<li><p>257.Binary Tree Paths</p>
+</li>
+</ul>
+<h2 id="March-26"><a href="#March-26" class="headerlink" title="March 26"></a>March 26</h2><ul>
+<li><p>404.Sum of Left Leaves</p>
+</li>
+<li><p>513.Find Bottom Left Tree Values</p>
+</li>
+<li><p>112.Path Sum</p>
+</li>
+<li><p>113.Path Sum II</p>
+</li>
+<li><p>654.Maximum Binary Tree</p>
+</li>
+<li><p>617.Merge Two Binary Trees</p>
+</li>
+<li><p>700.Search in a Binary Search Tree</p>
+</li>
+<li><p>98.Validate Binary Search Tree</p>
+</li>
+<li><p>530.Minimum Absolute Difference in BST</p>
+</li>
+<li><p>501.Find Modes in Binary Search Tree</p>
+</li>
+<li><p>258.Add Digits</p>
+</li>
+<li><p>5253.Find Palindrome With Fixed Length</p>
+</li>
+<li><p>5236.Minimum Deletions to Make Array Beautiful</p>
+</li>
+<li><p>5268.Find the Difference of Two Arrays</p>
+</li>
+</ul>
+<h2 id="March-27"><a href="#March-27" class="headerlink" title="March 27"></a>March 27</h2><p>None attemped</p>
+<h2 id="March-28"><a href="#March-28" class="headerlink" title="March 28"></a>March 28</h2><p>None attemped</p>
+<h2 id="March-29"><a href="#March-29" class="headerlink" title="March 29"></a>March 29</h2><p>None attemped</p>
+<h2 id="March-30"><a href="#March-30" class="headerlink" title="March 30"></a>March 30</h2><p>None attemped</p>
+<h2 id="March-31"><a href="#March-31" class="headerlink" title="March 31"></a>March 31</h2><ul>
+<li><p>235.Lowest Common Ancestor of a Binary Search Tree</p>
+</li>
+<li><p>701.Insert into a Binary Search Tree</p>
+</li>
+<li><p>450.Delete Node in a BST</p>
+</li>
+<li><p>669.Trim a Binary Search Tree</p>
+</li>
+<li><p>108.Convert Sorted Array to Binary Search Tree</p>
+</li>
+<li><p>538.Convert BST to Greater Tree</p>
+</li>
+<li><p>455.Assign Cookies</p>
+</li>
+</ul>
+<h2 id="April-1"><a href="#April-1" class="headerlink" title="April 1"></a>April 1</h2><ul>
+<li><p>376.Wiggle Subsequence</p>
+</li>
+<li><p>53.Maximum Subarray</p>
+</li>
+<li><p>55.Jump Game</p>
+</li>
+<li><p>45.Jump Game II</p>
+</li>
+<li><p>1005.Maximize Sum Of Array After K Negations</p>
+</li>
+<li><p>134.Gas Station</p>
+</li>
+<li><p>135.Candy</p>
+</li>
+<li><p>860.Lemonade Change</p>
+</li>
+<li><p>406.Queue Reconstruction by Height</p>
+</li>
+<li><p>452.Minimum Number of Arrows to Burst Ballons</p>
+</li>
+<li><p>435.Non-overlapping Intervals</p>
+</li>
+<li><p>504.Base 7</p>
+</li>
+<li><p>763.Partition Labels</p>
+</li>
+<li><p>56.Merge Intervals</p>
+</li>
+</ul>
+<h2 id="April-2"><a href="#April-2" class="headerlink" title="April 2"></a>April 2</h2><ul>
+<li>738.Monotone Increasing Digits</li>
+<li>746.Min Cost Climbing Stairs</li>
+<li>62.Unique Paths</li>
+<li>63.Unique Paths II</li>
+<li>343.Integer Break</li>
+<li>96.Unique Binary Search Trees</li>
+<li>2220.Minimum Bit Flips to Convert Number</li>
+<li>2221.Find Trianglular Sum of an Array</li>
+<li>416.Partition Equal Subset Sum</li>
+<li>1049.Last Stone Weight II</li>
+<li>494.Target Sum</li>
+<li>474.Ones and Zeroes</li>
+<li>518.Coin Change 2</li>
+</ul>
+<h2 id="April-3"><a href="#April-3" class="headerlink" title="April 3"></a>April 3</h2><p>None attemped</p>
+<h2 id="April-4"><a href="#April-4" class="headerlink" title="April 4"></a>April 4</h2><ul>
+<li>70.Climbing Stairs</li>
+</ul>
+<h2 id="April-5"><a href="#April-5" class="headerlink" title="April 5"></a>April 5</h2><p>None attemped</p>
+<h2 id="April-6"><a href="#April-6" class="headerlink" title="April 6"></a>April 6</h2><p>None attemped</p>
+<h2 id="April-7"><a href="#April-7" class="headerlink" title="April 7"></a>April 7</h2><p>None attemped</p>
+<h2 id="April-8"><a href="#April-8" class="headerlink" title="April 8"></a>April 8</h2><ul>
+<li>322.Coin Change</li>
+<li>139.Word Break</li>
+<li>198.House Robber</li>
+<li>213.House Robber II</li>
+<li>337.House Robber III</li>
+<li>300.Longest Increasing Subsequence</li>
+<li>674.Longest Continuous Increasing Subsequence</li>
+<li>718.Maximum Length of Repeated Subarray</li>
+<li>1143.Longest Common Subsequence</li>
+</ul>
+<h2 id="April-9"><a href="#April-9" class="headerlink" title="April 9"></a>April 9</h2><ul>
+<li>1035.Uncrossed Lines</li>
+<li>53.Maximum Subarray</li>
+<li>392.Is Subsequence</li>
+<li>115.Distinct Subsequences</li>
+<li>583.Delete Operation for Two Strings</li>
+<li>72.Edit Distance</li>
+<li>647.Palindromic Substrings</li>
+<li>516.Longest Palindromic Subsequence</li>
+</ul>
+<h2 id="April-10"><a href="#April-10" class="headerlink" title="April 10"></a>April 10</h2><p>None attemped</p>
+<h2 id="April-11"><a href="#April-11" class="headerlink" title="April 11"></a>April 11</h2><ul>
+<li>752.Open the Lock</li>
+<li>773.Sliding Puzzle</li>
+<li>543.Diameter of Binary Tree</li>
+<li>23.Merge k Sorted Lists</li>
+<li>876.Middle of the Linked List</li>
+<li>160.Intersection of Two Linked Lists</li>
+</ul>
+<h2 id="April-12"><a href="#April-12" class="headerlink" title="April 12"></a>April 12</h2><ul>
+<li><p>76.Minimum Window Substring</p>
+</li>
+<li><p>567.Permutation in String</p>
+</li>
+<li><p>3.Longest Substring Without Repeating Characters</p>
+</li>
+<li><p>289.Game of Life</p>
+</li>
+<li><p>59.Spiral Matrix II</p>
+</li>
+<li><p>48.Rotate Image</p>
+</li>
+<li><p>54.Spiral Matrix</p>
+</li>
+<li><p>206.Reverse Linked List</p>
+</li>
+<li><p>92.Reverse Linked List II</p>
+</li>
+<li><p>73.Set Matrix Zeroes</p>
+</li>
+<li><p>1287.Element Appearing More Than 25% In Sorted Array</p>
+</li>
+<li><p>137.Single Number II</p>
+</li>
+<li><p>389.Find the Difference</p>
+</li>
+<li><p>451.Sort Characters By Frequency</p>
+</li>
+<li><p>525.Contiguous Array</p>
+</li>
+<li><p>234.Palindrome Linked List</p>
+</li>
+<li><p>611.Valid Triangle Number</p>
+</li>
+<li><p>2032.Two Out of Three</p>
+</li>
+<li><p>86.Partition List</p>
+</li>
+</ul>
+<h2 id="April-13"><a href="#April-13" class="headerlink" title="April 13"></a>April 13</h2><ul>
+<li>700.Search in a Binary Search Tree</li>
+</ul>
+<h2 id="April-14"><a href="#April-14" class="headerlink" title="April 14"></a>April 14</h2><ul>
+<li>669.Trim a Binary Tree</li>
+<li>303.Range Sum Query - Immutable</li>
+<li>304.Range Sum Query 2D - Immutable</li>
+<li>560.Subarray Sum Equals K</li>
+</ul>
+<h2 id="April-15"><a href="#April-15" class="headerlink" title="April 15"></a>April 15</h2><ul>
+<li>538.Convert BST to Greater Tree</li>
+</ul>
+<h2 id="April-16"><a href="#April-16" class="headerlink" title="April 16"></a>April 16</h2><p>None attempted</p>
+<h2 id="April-17"><a href="#April-17" class="headerlink" title="April 17"></a>April 17</h2><ul>
+<li>230.Kth Smallest Element in a BST</li>
+</ul>
+<h2 id="April-18"><a href="#April-18" class="headerlink" title="April 18"></a>April 18</h2><ul>
+<li>1109.Corporate Flight Bookings</li>
+<li>1094.Car Pooling</li>
+<li>99.Recover Binary Search Tree</li>
+</ul>
+<h2 id="April-19"><a href="#April-19" class="headerlink" title="April 19"></a>April 19</h2><ul>
+<li>173.Binary Search Tree Iterator</li>
+</ul>
+<h2 id="April-20"><a href="#April-20" class="headerlink" title="April 20"></a>April 20</h2><ul>
+<li>705.Design HashSet</li>
+</ul>
+<h2 id="April-21"><a href="#April-21" class="headerlink" title="April 21"></a>April 21</h2><ul>
+<li>706.Design HashMap</li>
+</ul>
+<h2 id="April-22"><a href="#April-22" class="headerlink" title="April 22"></a>April 22</h2><ul>
+<li>535.Encode and Decode TinyURL, a sytem design problem</li>
+<li>875.Koko Eating Bananas, binary search wrap up</li>
+<li>1011.Capacity To Ship Packages Within D Days, binary search wrap up</li>
+<li>410.Split Array Largest Sum, binary search wrap up</li>
+</ul>
+<h2 id="April-23"><a href="#April-23" class="headerlink" title="April 23"></a>April 23</h2><ul>
+<li>870.Advantege Shuffle, greedy algorithm</li>
+<li>380.Insert Delete GetRandom, hash table + array $O(1)$</li>
+<li>719.Random Pick with Blacklist, hash table</li>
+<li>260.Single Number III, hash table</li>
+<li>290.Word Pattern</li>
+</ul>
+<h2 id="April-24"><a href="#April-24" class="headerlink" title="April 24"></a>April 24</h2><p>Rank 173,278</p>
+<h2 id="April-25"><a href="#April-25" class="headerlink" title="April 25"></a>April 25</h2><p>Slipped day</p>
+<h2 id="April-26"><a href="#April-26" class="headerlink" title="April 26"></a>April 26</h2><ul>
+<li>338.Counting Bits</li>
+</ul>
+<h2 id="April-27"><a href="#April-27" class="headerlink" title="April 27"></a>April 27</h2><p>Slipped day</p>
+<h2 id="April-28"><a href="#April-28" class="headerlink" title="April 28"></a>April 28</h2><ul>
+<li>226.Invert Binary Tree</li>
+<li>104.Maximum Depth of Binary Tree</li>
+<li>116.Populating Next Right Pointers in Each Node</li>
+<li>114.Flatten Binary Tree to Linked List, simple preorder traversal</li>
+</ul>
+<h2 id="April-29"><a href="#April-29" class="headerlink" title="April 29"></a>April 29</h2><ul>
+<li>654.Maximum Binary Tree, preorder traversal</li>
+<li>105.Construct Binary Tree from Preorder and Inorder Traversal, simple recursion</li>
+<li>106.Construct Binary Tree from Inorder and Postorder Traversal</li>
+<li>1038.Binary Search Tree to Greater Sum Tree</li>
+</ul>
+<h2 id="April-30"><a href="#April-30" class="headerlink" title="April 30"></a>April 30</h2><ul>
+<li>844.Backspace String Compare, stack</li>
+</ul>
+<h2 id="May-1"><a href="#May-1" class="headerlink" title="May 1"></a>May 1</h2><ul>
+<li>889.Construct Binary Tree from Preorder and Postorder Traversal</li>
+<li>905.Sort Array By Parity</li>
+</ul>
+<h2 id="May-2"><a href="#May-2" class="headerlink" title="May 2"></a>May 2</h2><ul>
+<li>2255.Count Prefixes of a Given String</li>
+</ul>
+<h2 id="May-3"><a href="#May-3" class="headerlink" title="May 3"></a>May 3</h2><ul>
+<li>1679.Max Number of K-Sum Pairs, sliding window</li>
+</ul>
+<h2 id="May-4"><a href="#May-4" class="headerlink" title="May 4"></a>May 4</h2><ul>
+<li>225.Implement Stack using Queues</li>
+</ul>
+<h2 id="May-5"><a href="#May-5" class="headerlink" title="May 5"></a>May 5</h2><ul>
+<li>2259.Remove Digit From Number to Maximize Result</li>
+<li>1008.Construct Binary Search Tree from Preorder Traversal</li>
+<li>297.Serialize and Deserialize Binary Tree</li>
+<li>449.Serialize and Deserialize BST</li>
+<li>652.Find Duplicate Subtrees</li>
+<li>912.Sort an Array, QuickSort, MergeSort</li>
+</ul>
+<h2 id="May-6"><a href="#May-6" class="headerlink" title="May 6"></a>May 6</h2><ul>
+<li>456.132 Pattern</li>
+</ul>
+<h2 id="May-7"><a href="#May-7" class="headerlink" title="May 7"></a>May 7</h2><ul>
+<li>96.Unique Binary Search Trees</li>
+</ul>
+<h2 id="May-8"><a href="#May-8" class="headerlink" title="May 8"></a>May 8</h2><ul>
+<li>95.Unique Binary Search Trees II</li>
+</ul>
+<h2 id="May-9"><a href="#May-9" class="headerlink" title="May 9"></a>May 9</h2><ul>
+<li><p>766.Toeplitz Matrix</p>
+</li>
+<li><p>17.Letter Combinations of a Phone Number</p>
+</li>
+</ul>
+<h2 id="May-10"><a href="#May-10" class="headerlink" title="May 10"></a>May 10</h2><ul>
+<li>216.Combination Sum III, backtracking</li>
+<li>1641.Count Sorted Vowel Strings</li>
+<li>912.Sort-an-Array, quickSort</li>
+<li>215.Kth Largest Element in an Array, quick selection</li>
+<li>222.Count Complete Tree Nodes</li>
+</ul>
+<h2 id="May-11"><a href="#May-11" class="headerlink" title="May 11"></a>May 11</h2><ul>
+<li>47.Permutations II</li>
+</ul>
+<h2 id="May-12"><a href="#May-12" class="headerlink" title="May 12"></a>May 12</h2><ul>
+<li><p>236.Lowest Common Ancestor of a Binary Tree</p>
+</li>
+<li><p>235.Lowest Common Ancestor of a Binary Search Tree</p>
+</li>
+<li><p>797.All Paths From Source to Target, BFS, graph</p>
+</li>
+<li><p>207.Course Schedule, graph DFS, cycle detection</p>
+</li>
+<li><p>117.Populating Next Right Pointers in Each Node II, tree BFG</p>
+</li>
+<li><p>210.Course Schedule II, graph DFS and BFS, topological sort</p>
+</li>
+<li><p>785.Is Graph Bipartite? graph DFS and BFS</p>
+</li>
+<li><p>886.Possible Bipartition, DFS</p>
+</li>
+<li><p>125.Valid Palindrome</p>
+</li>
+<li><p>141.Linked List Cycle, slow and fast pointers</p>
+</li>
+</ul>
+<h2 id="May-13"><a href="#May-13" class="headerlink" title="May 13"></a>May 13</h2><ul>
+<li>200.Number of Islands, DFS</li>
+<li>1254.Number of Closed Islands, DFS</li>
+<li>130.Surrounded-Regions, DFS</li>
+<li>990.Satisfiability of Equality Equations, Union and Find</li>
+</ul>
+<h2 id="May-14"><a href="#May-14" class="headerlink" title="May 14"></a>May 14</h2><ul>
+<li>2270.Number of Ways to Split Array</li>
+<li>2269.Find the K-Beauty of a Number</li>
+<li>1584.Min-Cost-to-Connect-All-Points, Kruskal Minimum Spanning Tree</li>
+<li>743.Network Delay Time, Dijkstra, BFS</li>
+<li>1631.Path With Minimum Effort, Dijkstra, BFS</li>
+<li>1514.Path with Maximum Probability, Dijkstra, BFS (adjacency matrix will report TLE)</li>
+<li>146.LRU Cache, C++ easy implementation</li>
+<li>704.Binary Search</li>
+<li>278.First Bad Version, Binary Search</li>
+<li>35.Search Insert Position, Binary Search</li>
+<li>119.Pascal’s Triangle II</li>
+<li>49.Group Anagrams</li>
+<li>1446.Consecutive Characters</li>
+<li>485.Max Consecutive Ones</li>
+<li>1295.Find Numbers with Even Number of Digits</li>
+<li>208.Implement Trie, Trie</li>
+<li>648.Replace Words, Trie</li>
+<li>211.Design Add and Search Words Data Structure, Trie</li>
+<li>677.Map Sum Pairs, Trie</li>
+<li>540.Single Element in a Sorted Array, Binary Search</li>
+<li>1302.Deepest Leaves Sum</li>
+<li>6065.Largest Combination With Bitwise AND Greater Than Zero</li>
+<li>6064.Maximum Consecutive Floors Without Special Floors</li>
+<li>5234.Find Resultant Array After Removing Anagrams</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpeg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/Algorithms/" rel="tag"># Algorithms</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/12/Distributed%20Systems-RPC%20Distributed%20Computing%20and%20Scheduling/" rel="prev" title="Distributed Systems: RPC Distributed Computing and Scheduling">
+      <i class="fa fa-chevron-left"></i> Distributed Systems: RPC Distributed Computing and Scheduling
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/04/10/Computer%20Graphics-Programming%20Interactive/" rel="next" title="Computer Graphics: Programming Interactive 2D Graphics with OpenGL">
+      Computer Graphics: Programming Interactive 2D Graphics with OpenGL <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mar-17"><span class="nav-number">1.</span> <span class="nav-text">Mar 17</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mar-18"><span class="nav-number">2.</span> <span class="nav-text">Mar 18</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mar-19"><span class="nav-number">3.</span> <span class="nav-text">Mar 19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mar-20"><span class="nav-number">4.</span> <span class="nav-text">Mar 20</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-21"><span class="nav-number">5.</span> <span class="nav-text">March 21</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-22"><span class="nav-number">6.</span> <span class="nav-text">March 22</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-23"><span class="nav-number">7.</span> <span class="nav-text">March 23</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-24"><span class="nav-number">8.</span> <span class="nav-text">March 24</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-25"><span class="nav-number">9.</span> <span class="nav-text">March 25</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-26"><span class="nav-number">10.</span> <span class="nav-text">March 26</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-27"><span class="nav-number">11.</span> <span class="nav-text">March 27</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-28"><span class="nav-number">12.</span> <span class="nav-text">March 28</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-29"><span class="nav-number">13.</span> <span class="nav-text">March 29</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-30"><span class="nav-number">14.</span> <span class="nav-text">March 30</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#March-31"><span class="nav-number">15.</span> <span class="nav-text">March 31</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-1"><span class="nav-number">16.</span> <span class="nav-text">April 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-2"><span class="nav-number">17.</span> <span class="nav-text">April 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-3"><span class="nav-number">18.</span> <span class="nav-text">April 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-4"><span class="nav-number">19.</span> <span class="nav-text">April 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-5"><span class="nav-number">20.</span> <span class="nav-text">April 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-6"><span class="nav-number">21.</span> <span class="nav-text">April 6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-7"><span class="nav-number">22.</span> <span class="nav-text">April 7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-8"><span class="nav-number">23.</span> <span class="nav-text">April 8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-9"><span class="nav-number">24.</span> <span class="nav-text">April 9</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-10"><span class="nav-number">25.</span> <span class="nav-text">April 10</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-11"><span class="nav-number">26.</span> <span class="nav-text">April 11</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-12"><span class="nav-number">27.</span> <span class="nav-text">April 12</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-13"><span class="nav-number">28.</span> <span class="nav-text">April 13</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-14"><span class="nav-number">29.</span> <span class="nav-text">April 14</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-15"><span class="nav-number">30.</span> <span class="nav-text">April 15</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-16"><span class="nav-number">31.</span> <span class="nav-text">April 16</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-17"><span class="nav-number">32.</span> <span class="nav-text">April 17</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-18"><span class="nav-number">33.</span> <span class="nav-text">April 18</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-19"><span class="nav-number">34.</span> <span class="nav-text">April 19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-20"><span class="nav-number">35.</span> <span class="nav-text">April 20</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-21"><span class="nav-number">36.</span> <span class="nav-text">April 21</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-22"><span class="nav-number">37.</span> <span class="nav-text">April 22</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-23"><span class="nav-number">38.</span> <span class="nav-text">April 23</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-24"><span class="nav-number">39.</span> <span class="nav-text">April 24</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-25"><span class="nav-number">40.</span> <span class="nav-text">April 25</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-26"><span class="nav-number">41.</span> <span class="nav-text">April 26</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-27"><span class="nav-number">42.</span> <span class="nav-text">April 27</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-28"><span class="nav-number">43.</span> <span class="nav-text">April 28</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-29"><span class="nav-number">44.</span> <span class="nav-text">April 29</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#April-30"><span class="nav-number">45.</span> <span class="nav-text">April 30</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-1"><span class="nav-number">46.</span> <span class="nav-text">May 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-2"><span class="nav-number">47.</span> <span class="nav-text">May 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-3"><span class="nav-number">48.</span> <span class="nav-text">May 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-4"><span class="nav-number">49.</span> <span class="nav-text">May 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-5"><span class="nav-number">50.</span> <span class="nav-text">May 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-6"><span class="nav-number">51.</span> <span class="nav-text">May 6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-7"><span class="nav-number">52.</span> <span class="nav-text">May 7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-8"><span class="nav-number">53.</span> <span class="nav-text">May 8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-9"><span class="nav-number">54.</span> <span class="nav-text">May 9</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-10"><span class="nav-number">55.</span> <span class="nav-text">May 10</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-11"><span class="nav-number">56.</span> <span class="nav-text">May 11</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-12"><span class="nav-number">57.</span> <span class="nav-text">May 12</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-13"><span class="nav-number">58.</span> <span class="nav-text">May 13</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#May-14"><span class="nav-number">59.</span> <span class="nav-text">May 14</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Lyrics</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Aden-Q" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Aden-Q" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:qian0102@umn.edu" title="E-Mail → mailto:qian0102@umn.edu" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/ZechengQ" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;ZechengQ" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/king-35-38" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;king-35-38" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lyrics</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '69ff68eec89b6cd91e37',
+      clientSecret: '200633852bdb3579481b3fecee7178c1b98f471e',
+      repo        : 'gitalk-comments',
+      owner       : 'Aden-Q',
+      admin       : ['Aden-Q'],
+      id          : '013bd212e4d0e3af95014cd78796f93b',
+        language: 'en | zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+    </div>
+</body>
+</html>
